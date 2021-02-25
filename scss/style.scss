@@ -12,16 +12,16 @@
     "picture header" auto
     "aside main" 1fr
     / 350px auto;
-    @include xs {
-      overflow-x: hidden;
-      grid:
-    "header" auto
-    "main" auto
-    "picture" auto
-    "aside" auto
-    "footer" auto
-    / auto;
-    }
+  @include xs {
+    overflow-x: hidden;
+    grid:
+      "header" auto
+      "main" auto
+      "picture" auto
+      "aside" auto
+      "footer" auto
+      / auto;
+  }
 }
 
 header {
@@ -119,9 +119,9 @@ aside {
     padding: 1rem 1rem;
     border-radius: 5px;
     transform: all 0.2s;
-    &:hover{
+    &:hover {
       background: var(--border);
-      i{
+      i {
         color: var(--primary);
         transform: scale(1.2);
         transition: all 0.2s;
@@ -170,7 +170,7 @@ main {
         margin: 0;
       }
       p {
-        margin:0 0 1rem 0;
+        margin: 0 0 1rem 0;
         font-style: italic;
       }
     }
