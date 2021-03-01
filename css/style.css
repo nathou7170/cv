@@ -157,12 +157,29 @@ aside .bar-skills .bar-skill-progress {
   width: 80%;
   background: var(--primary);
 }
+aside .bar-skills .bar-skill-progress1 {
+  position: absolute;
+  height: 5px;
+  top: 0;
+  left: 0;
+  width: 60%;
+  background: var(--primary);
+}
 aside .bar-skills .bar-skill-dot {
   position: absolute;
   height: 10px;
   width: 10px;
   background: var(--primary);
   left: calc(80% - 5px);
+  top: -2.5px;
+  border-radius: 50%;
+}
+aside .bar-skills .bar-skill-dot1 {
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  background: var(--primary);
+  left: calc(60% - 5px);
   top: -2.5px;
   border-radius: 50%;
 }
