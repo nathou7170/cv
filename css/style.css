@@ -201,3 +201,33 @@ main {
       main .experience .content li {
         margin: 0 0 1rem 0;
         font-style: italic; }
+  main .projects {
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem; }
+    main .projects-title h2 {
+      font-size: 1.8rem;
+      text-align: center;
+      font-family: var(--font-family); }
+    main .projects .projects-list {
+      overflow: hidden;
+      margin-top: 2rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3rem; }
+      @media (max-width: 600px) {
+        main .projects .projects-list {
+          grid-template-columns: 1fr; } }
+      main .projects .projects-list img {
+        width: 400px;
+        height: 340px;
+        border-radius: 1rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+        filter: opacity(0.9);
+        transition: all 0.3s ease; }
+        main .projects .projects-list img:hover {
+          transform: scale(1.05);
+          filter: opacity(1); }
